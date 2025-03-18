@@ -9,7 +9,7 @@
       "files": [
         {
           "fileType": "obsEmbedding.csv",
-          "url": "https://github.com/Mmaycon/Spatial_Data_Visualization/tree/14127635424722ae7789ca849d98a3b4d3dfa9fd/Datasets/Data_01/obsEmbedding_pca.csv",
+          "url": "https://mmaycon.github.io/Spatial_Data_Visualization/Datasets/Data_01/obsEmbedding_pca.csv",
           "coordinationValues": {
             "obsType": "cell",
             "embeddingType": "PCA"
@@ -24,7 +24,7 @@
         },
         {
           "fileType": "obsEmbedding.csv",
-          "url": "https://github.com/Mmaycon/Spatial_Data_Visualization/tree/14127635424722ae7789ca849d98a3b4d3dfa9fd/Datasets/Data_01/obsEmbedding_umap.csv",
+          "url": "https://mmaycon.github.io/Spatial_Data_Visualization/Datasets/Data_01/obsEmbedding_umap.csv",
           "coordinationValues": {
             "obsType": "cell",
             "embeddingType": "UMAP"
@@ -39,7 +39,7 @@
         },
         {
           "fileType": "obsSets.csv",
-          "url": "https://github.com/Mmaycon/Spatial_Data_Visualization/tree/14127635424722ae7789ca849d98a3b4d3dfa9fd/Datasets/Data_01/obsSets_cell_anno.csv",
+          "url": "https://mmaycon.github.io/Spatial_Data_Visualization/Datasets/Data_01/obsSets_cell_anno.csv",
           "coordinationValues": {
             "obsType": "cell"
           },
@@ -55,7 +55,7 @@
         },
         {
           "fileType": "obsFeatureMatrix.csv",
-          "url": "https://github.com/Mmaycon/Spatial_Data_Visualization/tree/14127635424722ae7789ca849d98a3b4d3dfa9fd/Datasets/Data_01/exp_mtx_hvg.csv",
+          "url": "https://mmaycon.github.io/Spatial_Data_Visualization/Datasets/Data_01/exp_mtx_hvg.csv",
           "coordinationValues": {
             "obsType": "cell",
             "featureType": "gene",
@@ -64,7 +64,7 @@
         },
         {
           "fileType": "obsSegmentations.json",
-          "url": "https://github.com/Mmaycon/Spatial_Data_Visualization/tree/14127635424722ae7789ca849d98a3b4d3dfa9fd/Datasets/Data_01/obsSegmentations_polygons.json",
+          "url": "https://mmaycon.github.io/Spatial_Data_Visualization/Datasets/Data_01/obsSegmentations_polygons.json",
           "coordinationValues": {
             "obsType": "cell"
           }
