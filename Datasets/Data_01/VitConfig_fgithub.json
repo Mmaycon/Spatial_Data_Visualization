@@ -1,0 +1,192 @@
+{
+  "version": "1.0.17",
+  "name": "Spatial Transcriptomics Visualization",
+  "description": "SAHA",
+  "datasets": [
+    {
+      "uid": "D1",
+      "name": "Spatial Transcriptomics Dataset",
+      "files": [
+        {
+          "fileType": "obsEmbedding.csv",
+          "url": "https://github.com/Mmaycon/Spatial_Data_Visualization/tree/14127635424722ae7789ca849d98a3b4d3dfa9fd/Datasets/Data_01/obsEmbedding_pca.csv",
+          "coordinationValues": {
+            "obsType": "cell",
+            "embeddingType": "PCA"
+          },
+          "options": {
+            "obsIndex": "cell_id",
+            "obsEmbedding": [
+              "PC_1",
+              "PC_2"
+            ]
+          }
+        },
+        {
+          "fileType": "obsEmbedding.csv",
+          "url": "https://github.com/Mmaycon/Spatial_Data_Visualization/tree/14127635424722ae7789ca849d98a3b4d3dfa9fd/Datasets/Data_01/obsEmbedding_umap.csv",
+          "coordinationValues": {
+            "obsType": "cell",
+            "embeddingType": "UMAP"
+          },
+          "options": {
+            "obsIndex": "cell_id",
+            "obsEmbedding": [
+              "UMAP_1",
+              "UMAP_2"
+            ]
+          }
+        },
+        {
+          "fileType": "obsSets.csv",
+          "url": "https://github.com/Mmaycon/Spatial_Data_Visualization/tree/14127635424722ae7789ca849d98a3b4d3dfa9fd/Datasets/Data_01/obsSets_cell_anno.csv",
+          "coordinationValues": {
+            "obsType": "cell"
+          },
+          "options": {
+            "obsIndex": "cell_id",
+            "obsSets": [
+              {
+                "name": "Cell Anno",
+                "column": "leiden_cluster"
+              }
+            ]
+          }
+        },
+        {
+          "fileType": "obsFeatureMatrix.csv",
+          "url": "https://github.com/Mmaycon/Spatial_Data_Visualization/tree/14127635424722ae7789ca849d98a3b4d3dfa9fd/Datasets/Data_01/exp_mtx_hvg.csv",
+          "coordinationValues": {
+            "obsType": "cell",
+            "featureType": "gene",
+            "featureValueType": "expression"
+          }
+        },
+        {
+          "fileType": "obsSegmentations.json",
+          "url": "https://github.com/Mmaycon/Spatial_Data_Visualization/tree/14127635424722ae7789ca849d98a3b4d3dfa9fd/Datasets/Data_01/obsSegmentations_polygons.json",
+          "coordinationValues": {
+            "obsType": "cell"
+          }
+        }
+      ]
+    }
+  ],
+  "coordinationSpace": {
+    "dataset": {
+      "A": "D1"
+    },
+    "embeddingType": {
+      "A": "UMAP",
+      "B": "PCA"
+    },
+    "embeddingObsSetPolygonsVisible": {
+      "A": false
+    },
+    "embeddingObsSetLabelsVisible": {
+      "A": true
+    },
+    "embeddingObsSetLabelSize": {
+      "A": 16
+    },
+    "embeddingObsRadiusMode": {
+      "A": "manual"
+    },
+    "embeddingObsRadius": {
+      "A": 3
+    },
+    "embeddingZoom": {
+      "TSNE": 3,
+      "UMAP": 3
+    },
+    "spatialZoom": {
+      "A": null
+    },
+    "spatialTargetX": {
+      "A": null
+    },
+    "spatialTargetY": {
+      "A": null
+    },
+    "spatialSegmentationLayer": {
+      "A": {
+        "opacity": 1,
+        "radius": 0,
+        "visible": true,
+        "stroked": false
+      }
+    },
+    "obsColorEncoding": {
+      "A": "cellSetSelection",
+      "B": "geneSelection"
+    }
+  },
+  "layout": [
+    {
+      "component": "scatterplot",
+      "coordinationScopes": {
+        "dataset": "A",
+        "embeddingType": "A"
+      },
+      "x": 0,
+      "y": 0,
+      "w": 4,
+      "h": 4
+    },
+    {
+      "component": "scatterplot",
+      "coordinationScopes": {
+        "dataset": "A",
+        "embeddingType": "B"
+      },
+      "x": 4,
+      "y": 0,
+      "w": 4,
+      "h": 4
+    },
+    {
+      "component": "obsSets",
+      "coordinationScopes": {
+        "dataset": "A"
+      },
+      "x": 0,
+      "y": 4,
+      "w": 6,
+      "h": 3
+    },
+    {
+      "component": "spatial",
+      "props": {
+        "cellRadius": 0.34
+      },
+      "coordinationScopes": {
+        "spatialZoom": "A",
+        "spatialTargetX": "A",
+        "spatialTargetY": "A",
+        "spatialSegmentationLayer": "A"
+      },
+      "x": 5,
+      "y": 0,
+      "w": 4,
+      "h": 4
+    },
+    {
+      "component": "featureList",
+      "x": 9,
+      "y": 0,
+      "w": 3,
+      "h": 2
+    },
+    {
+      "component": "heatmap",
+      "props": {
+        "transpose": true
+      },
+      "x": 2,
+      "y": 4,
+      "w": 5,
+      "h": 2
+    }
+  ],
+  "initStrategy": "auto"
+}
