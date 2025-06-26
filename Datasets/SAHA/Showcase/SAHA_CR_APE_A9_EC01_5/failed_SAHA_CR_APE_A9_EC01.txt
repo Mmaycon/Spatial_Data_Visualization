@@ -1,0 +1,2 @@
+Polygon file not found for slide: SAHA_CR_APE_A9_EC01
+Path: mnt/scratch2/Maycon/Saha/Polygon_files/SAHA_CR_APE_A9_EC01-polygons.csv.gz
